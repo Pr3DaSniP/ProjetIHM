@@ -1,0 +1,40 @@
+
+  FROM
+  [
+    [
+      {"emotion":"angry","value":0.7372681267263751},
+      {"emotion":"sad","value":0.005048243226351613},
+      {"emotion":"surprised","value":0.005904989794058353},
+      {"emotion":"happy","value":0.015867503098874712},
+      {"emotion":"disgusted","value":0.005048243226351613},
+      {"emotion":"fearful","value":0.005048243226351613},
+    ],
+    [
+      {"emotion":"angry","value":0.0859419354590243},
+      {"emotion":"sad","value":0.48981527005382713},
+      {"emotion":"surprised","value":0.030430644230680027},
+      {"emotion":"happy","value":0.0834195253073988},
+      {"emotion":"disgusted","value":0.005048243226351613},
+      {"emotion":"fearful","value":0.005048243226351613},
+    ],
+    etc...
+  ]
+  TO
+  [
+    {
+      "Emotion": "angry",
+      "Value": [
+        0.7372681267263751,
+        0.0859419354590243,
+        0.0859419354590243,
+      ]
+    },
+    {
+      "Emotion": "sad",
+      "Value": [
+        0.005048243226351613,
+        0.48981527005382713,
+        0.48981527005382713,
+      ]
+    },
+    etc...

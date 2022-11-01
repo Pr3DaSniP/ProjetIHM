@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/templatemo-breezed.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/questionnaire.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Emotion Detection</title>
+  </head>
+  <body
+    style="
+      background-image: url('images/jonatan-pie-3l3RwQdHRHg-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    "
+  >
+    <script src="./clmtrackr.js"></script>
+    <script src="./js/model_pca_20_svm.js"></script>
+    <script src="./js/emotion_classifier.js"></script>
+    <script src="./js/emotionmodel.js"></script>
+
+    <header class="header-area header-sticky">
+      <div
+        class=""
+        style="display: flex; align-items: center; justify-content: center"
+      >
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo"> .INTERMOTIONS </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav" style="display: none">
+                <li class="scroll-to-section">
+                  <a href="#top" class="active">Home</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#about" class="">About</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#projects" class="">Projects</a>
+                </li>
+                <li class="submenu">
+                  <a href="javascript:;">Drop Down</a>
+                  <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">FAQ's</a></li>
+                    <li><a href="">Blog</a></li>
+                  </ul>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#contact-us" class="active">Contact Us</a>
+                </li>
+                <div class="search-icon">
+                  <a href="#search"><i class="fa fa-search"></i></a>
+                </div>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <h3
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 25px; ;
+      "
+    >
+      Welcome To Intermotions
+    </h3>
+    <h5
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 200;
+        margin-bottom: 50px;
+      "
+    >
+      A platform when you can record every emotions during an online interview
+    </h5>
+    <!--<a href="#" class="main-stroked-button" tabindex="0">Learn More</a>!-->
+    <!--<a href="#" class="main-filled-button" tabindex="0">Get It Now</a>!-->
+
+    <div id="container" style="margin-bottom: 25px">
+      <video id="inputVideo" width="640" height="480" autoplay></video>
+      <canvas id="drawCanvas" width="640" height="480"></canvas>
+
+      <!-- ***** Quiz ***** -->
+
+      <div class="containerQuiz">
+        <div id="game" class="justify-center flex-column">
+          <div id="hud">
+            <div class="hud-item">
+              <p id="progressText" class="hud-prefix">Question</p>
+              <div id="progressBar">
+                <div id="progressBarFull"></div>
+              </div>
+            </div>
+            <div class="hud-item">
+              <p class="hud-prefix">Score</p>
+              <h1 class="hud-main-text" id="score">0</h1>
+            </div>
+          </div>
+          <h1 id="question">Je suis une question ?</h1>
+          <div class="choice-container" id="1">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text" data-number="1">Choix 1</p>
+          </div>
+          <div class="choice-container" id="2">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text" data-number="2">Choix 2</p>
+          </div>
+          <div class="choice-container" id="3">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text" data-number="3">Choix 3</p>
+          </div>
+          <div class="choice-container" id="4">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text" data-number="4">Choix 4</p>
+          </div>
+        </div>
+      </div>
+      <!-- *****      ***** -->
+    </div>
+
+    <div
+      id="control"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <button id="startbutton" class="main-filled-button">Start</button>
+      <button id="stopbutton" class="main-stroked-button">Stop</button>
+      <a
+        id="download-video"
+        download="video.webm"
+        style="color: #fff; display: none; margin-left: 10px"
+        >Download Video</a
+      >
+      <a
+        id="download-rapport"
+        download="rapport.pdf"
+        style="color: #fff; display: none; margin-left: 10px"
+        >Download Rapport</a
+      >
+    </div>
+    <div id="charts">
+      <div id="chart1">
+        <canvas id="chart1_canvas" style="display: none"></canvas>
+      </div>
+    </div>
+    <footer style="padding: 30px 0px; margin-top: 30px">
+      <div
+        class=""
+        style="display: flex; align-items: center; justify-content: center"
+      >
+        <div class="row">
+          <div class="col-lg-6 col-xs-12">
+            <div class="left-text-content">
+              <p>Copyright © 2022 Intermotions Co., Ltd.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <div class="right-text-content">
+              <ul class="social-icons">
+                <li><p>Follow Us</p></li>
+                <li>
+                  <a rel="nofollow" href=""><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a rel="nofollow" href=""><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a rel="nofollow" href=""><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a rel="nofollow" href=""><i class="fa fa-dribbble"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Graphique -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Create PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>

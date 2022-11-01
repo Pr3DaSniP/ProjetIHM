@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.containerQuiz {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#game {
+    padding: 2rem;
+    background: #fff;
+    border: solid 1px #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-size: 1rem;
+    color: rgb(28,26,26);
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+h3 {
+    font-size: 0.25rem;
+    margin-bottom: 4rem;
+    text-align: justify;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 20%;
+    border-radius: 4px;
+    background: rgb(18,92,255);
+    font-size: 3rem;
+    min-width: 40rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 0 rgba(8, 114, 244, 0.6);
+    transform: scale(1.03);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: white;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+    color: white;
+}
+
+.correct {
+    background: rgb(0, 255, 0);
+}
+
+.incorrect {
+    background: rgb(255, 0, 0);
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(35, 70, 144);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(87, 140, 253);
+    width: 0%;
+}
+
+@media screen and (max-width: 600px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}

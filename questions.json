@@ -1,0 +1,22 @@
+[
+    {
+       "question":"Quel est le meilleur langage de programmation ?",
+       "reponsesPossibles":[
+            "C",
+            "C++",
+            "Java",
+            "Python"
+       ],
+       "reponse": 1
+    },
+    {
+      "question": "Quel est le meilleur framework web ?",
+      "reponsesPossibles": [
+         "React",
+         "Angular",
+         "Vue",
+         "Symfony"
+      ],
+      "reponse": 0
+    }
+ ]

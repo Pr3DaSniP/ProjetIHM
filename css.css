@@ -1,0 +1,89 @@
+#drawCanvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -o-transform : scaleX(-1);
+    -webkit-transform : scaleX(-1);
+    transform : scaleX(-1);
+    -ms-filter : fliph; /*IE*/
+    filter : fliph; /*IE*/
+}
+
+#inputVideo {
+    -o-transform : scaleX(-1);
+    -webkit-transform : scaleX(-1);
+    transform : scaleX(-1);
+    -ms-filter : fliph; /*IE*/
+    filter : fliph; /*IE*/ 
+}
+
+#container {
+    /*position : relative;*/
+    /*width : 370px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin : 0px auto;*/
+}
+
+#text-content {
+    color : #fff;
+}
+
+#emotion_container {
+    width: 600px;
+}
+
+#emotion_chart, #emotion_icons {
+    margin: 0 auto;
+    width : 400px;
+}
+
+body {
+    background-image: url('images/jonatan-pie-3l3RwQdHRHg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+button.main-stroked-button {
+    font-size: 13px;
+    border-radius: 25px;
+    padding: 11px 25px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  button.main-stroked-button:hover {
+    background-color: #fff;
+    color: #5fb759;
+  }
+
+  button.main-filled-button {
+    font-size: 13px;
+    border-radius: 25px;
+    padding: 13px 25px;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: #5fb759;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  button.main-filled-button:hover {
+    color: #fff;
+    background-color: #5fb759;
+  }
