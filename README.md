@@ -30,6 +30,8 @@ Assurez-vous d'avoir les éléments suivants installés :
 
 ## Démonstration
 
+https://pr3dasnip.github.io/ProjetIHM/
+
 ![Demo](demo.gif)
 
 ## Résultat
