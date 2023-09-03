@@ -3,6 +3,7 @@
 ![Langage](https://img.shields.io/badge/Language-HTML-orange)
 ![Langage](https://img.shields.io/badge/Language-JavaScript-yellow)
 ![Langage](https://img.shields.io/badge/Language-CSS-blue)
+![Librairies](https://img.shields.io/badge/Librairies-clmtrackr-violet)
 
 Ce projet vise à créer une application web permettant de suivre les émotions des participants lors d'un entretien vidéo, tout en offrant la possibilité à l'intervieweur de passer un quiz en parallèle. L'objectif est d'analyser les réactions émotionnelles des participants et de fournir des insights basés sur ces données.
 
