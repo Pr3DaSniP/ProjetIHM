@@ -1,6 +1,5 @@
 # Projet de suivi des émotions lors d'un entretien vidéo avec quiz
 
-![Release](https://img.shields.io/badge/Release-v1.0.0-blueviolet)
 ![Langage](https://img.shields.io/badge/Language-HTML-orange)
 ![Langage](https://img.shields.io/badge/Language-JavaScript-yellow)
 ![Langage](https://img.shields.io/badge/Language-CSS-blue)
